@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>147 Control</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top" style="background-color: #fff!important;">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">Control 147</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-home"></i>
+                    <span>Inicio</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+ 
+
+        
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Informes
+            </div>
+
+            
+
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                    aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-info"></i>
+                    <span>Meses detallados</span></a>
+                </a>
+                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h3 class="collapse-header" style="color:black!important">Meses</h3>
+                        <a class="collapse-item" href="#" data-toggle="modal" data-target="#mayo">Mayo</a>
+                        <a class="collapse-item" href="#" data-toggle="modal" data-target="#junio">Junio</a>
+                        <a class="collapse-item" href="#" data-toggle="modal" data-target="#julio">Julio</a>
+                        <div class="collapse-divider"></div>
+                    </div>
+                </div>
+            </li>
+
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages2"
+                    aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Trabajo Realizado</span>
+                </a>
+                <div id="collapsePages2" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="#" data-toggle="modal" data-target="#tjunio">Junio</a>
+                        <a class="collapse-item" href="#" data-toggle="modal" data-target="#tjulio">Julio</a>
+                        <div class="collapse-divider"></div>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Nav Item - Charts -->
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Progreso Mensual</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="tables.html">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Top Reclamos</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="tables.html">
+                    <i class="fas fa-fw fa-check"></i>
+                    <span>Top Resueltos</span></a>
+            </li>
+    
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+
+
+        </ul>
+        <!-- End of Sidebar -->
+     
+
+        <div class="container">
+
+            <div class="container text-center mt-5 mb-3 col-12">
+                <h1 class="text-center display-5" style="color:black!important"><b>Control y mejoras en el sistema de reclamos del 147</b></h2> 
+            </div> 
+            <h3 class="text-center mb-4 text-weight-bold text-uppercase" style="color:#345bcb"><b>INDICADOR MENSUAL % RESUELTOS</b></h3>
+            <br>
+            <div class="row">
+                 <!-- Earnings (Annual) Card Example -->
+                    <div class="col-xl-4 col-md-4 mb-4">
+                        <img src="/indicador/abril.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+                        <button type="button" name="" id="" class="btn btn-primary btn-lg btn-block collapse-item" href="#" data-toggle="modal" data-target="#barrasAbril" >detalle barras</button>
+                    </div>
+
+         
+                    <!-- Earnings (Annual) Card Example -->
+                    <div class="col-xl-4 col-md-4 mb-4">
+                        <img src="/indicador/mayo.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">     
+                        <button type="button" name="" id="" class="btn btn-primary btn-lg btn-block collapse-item" href="#" data-toggle="modal" data-target="#barrasMayo" >detalle barras</button>
+                    </div>
+
+
+                    <!-- Earnings (Annual) Card Example -->
+                    <div class="col-xl-4 col-md-4 mb-4">
+                       <img src="/indicador/junio.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+                       <button type="button" name="" id="" class="btn btn-primary btn-lg btn-block collapse-item" href="#" data-toggle="modal" data-target="#barrasJunio" >detalle barras</button>
+                    </div>
+            </div>
+
+
+
+        </div>
+
+            
+
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="mayo" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Mayo Informe detallado</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>¿Desea descargar este archivo?</p>
+                        <a type="button" class="btn btn-primary" target="_blank" href="./informes/147InformeActualizadoMAYO21.pdf">Descargar</a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="junio" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Junio Informe detallado</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>¿Desea descargar este archivo?</p>
+                        <a type="button" class="btn btn-primary" target="_blank" href="./informes/147InformeActualizadoJUNIO21.pdf">Descargar</a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="julio" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Julio Informe detallado</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>El mes de Julio aún no ha terminado. En los primeros días de Agosto el equipo de ordenamiento urbano publicará el informe detallado</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="julio2" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Julio Informe detallado</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>¿Desea descargar este archivo?</p>
+                        <a type="button" class="btn btn-primary" target="_blank" href="/informes/">Descargar</a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+
+
+
+
+        
+
+        <!-- Modal -->
+        <div class="modal fade" id="tjunio" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Informe Tareas Junio</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>¿Desea descargar este archivo?</p>
+                        <a type="button" class="btn btn-primary" target="_blank" href="./meses/Junio.pdf">Descargar</a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="tjulio" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Informe Tareas Julio</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>¿Desea descargar este archivo?</p>
+                        <a type="button" class="btn btn-primary" target="_blank" href="./meses/Julio.pdf">Descargar</a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+
+        
+        <!-- Modal -->
+        <div class="modal fade" id="barrasAbril" role="dialog" >
+            <div class="modal-dialog" >
+                <!-- Modal content-->
+                <div class="modal-content" >
+                    <div class="modal-header">
+                        <h4 class="modal-title">Barras Abril</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="/indicador/abrilBarras.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>       
+        <!-- Modal -->
+        <div class="modal fade" id="barrasMayo" role="dialog" >
+            <div class="modal-dialog" >
+                <!-- Modal content-->
+                <div class="modal-content" >
+                    <div class="modal-header">
+                        <h4 class="modal-title">Barras Mayo</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="/indicador/mayoBarras.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>       
+        <!-- Modal -->
+        <div class="modal fade" id="barrasJunio" role="dialog" >
+            <div class="modal-dialog" >
+                <!-- Modal content-->
+                <div class="modal-content" >
+                    <div class="modal-header">
+                        <h4 class="modal-title">Barras Junio</h4>
+                    </div>
+                    <div class="modal-body">
+                        <img src="/indicador/junioBarras.png" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <!-- End of Main Content -->
+            <!-- Footer -->
+            <footer class="sticky-footer bg-dark" style="background-color:black!important">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span style="color:white!important">Dirección de Ordenamiento Urbano 2021</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        
+        </div>
+        <!-- Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+
+    <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        </script>
+
+</body>
+
+</html>
