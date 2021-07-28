@@ -4,145 +4,169 @@ var junio = {"mes":[
 		"TipoPuntoEstrategico": "Bromatologia",
 		"Pendientes": 3,
 		"Total": 35,
-		"Resueltos": 32
+		"Resueltos": 32,
+		"link": 'datosReclamos/junio/bromatologia.xls'
 	},
 	{
 		"TipoPuntoEstrategico": "Comercio",
 		"Pendientes": 263,
 		"Total": 575,
-		"Resueltos": 312
+		"Resueltos": 312,
+		"link": 'datosReclamos/junio/comercio.xls'
 	},
 	{
 		"TipoPuntoEstrategico": "Defensa Civil",
 		"Pendientes": 57,
 		"Total": 120,
-		"Resueltos": 63
+		"Resueltos": 63,
+		"link": 'datosReclamos/junio/defensacivil.xls'
 	},
 	{
 		"TipoPuntoEstrategico": "Desarrollo Social",
 		"Pendientes": 2,
 		"Total": 45,
-		"Resueltos": 43
+		"Resueltos": 43,
+		"link": 'datosReclamos/junio/desarrollosocial.xls'
 	},
 	{
 		"TipoPuntoEstrategico": "Ente Vial ",
 		"Pendientes": 182,
 		"Total": 276,
-		"Resueltos": 94
+		"Resueltos": 94,
+		"link": 'datosReclamos/junio/entevial.xls'
 	},
 	{
 		"TipoPuntoEstrategico": "Espacios Públicos",
 		"Pendientes": 7,
 		"Total": 9,
-		"Resueltos": 2
+		"Resueltos": 2,
+		"link": 'datosReclamos/junio/espaciospublicos.xls'
 	},
 	{
 		"TipoPuntoEstrategico": "Guardaparque",
 		"Pendientes": 3,
 		"Total": 50,
-		"Resueltos": 47
+		"Resueltos": 47,
+		"link": 'datosReclamos/junio/guardaparque.xls'
 	},
 	{
 		"TipoPuntoEstrategico": "Higiene Urbana",
 		"Pendientes": 573,
 		"Total": 3051,
-		"Resueltos": 2478
+		"Resueltos": 2478,
+		"link": 'datosReclamos/junio/higieneurbana.xls'
 	},
 	{
 		"TipoPuntoEstrategico": "Infraestructura",
 		"Pendientes": 34,
 		"Total": 34,
-		"Resueltos": 0
+		"Resueltos": 0,
+		"link": 'datosReclamos/junio/infraestructura.xls'
 	},
 	{
 		"TipoPuntoEstrategico": "Mascotas",
 		"Pendientes": 29,
 		"Total": 49,
-		"Resueltos": 20
+		"Resueltos": 20,
+		"link": 'datosReclamos/junio/mascotas.xls'
 	},
 	{
 		"TipoPuntoEstrategico": "Medio ambiente",
 		"Pendientes": 7,
 		"Total": 12,
-		"Resueltos": 5
+		"Resueltos": 5,
+		"link": 'datosReclamos/junio/medioambiente.xls'
 	},
 	{
 		"TipoPuntoEstrategico": "Obras Privadas",
 		"Pendientes": 8,
 		"Total": 9,
-		"Resueltos": 1
+		"Resueltos": 1,
+		"link": 'datosReclamos/junio/obrasprivadas.xls'
 	},
 	{
 		"TipoPuntoEstrategico": "Obras Sanitarias",
 		"Pendientes": 355,
 		"Total": 584,
-		"Resueltos": 229
+		"Resueltos": 229,
+		"link": 'datosReclamos/junio/obrassanitarias.xls'
 	},
 	{
 		"TipoPuntoEstrategico": "OMIC",
 		"Pendientes": 2,
 		"Total": 2,
-		"Resueltos": 0
+		"Resueltos": 0,
+		"link": 'datosReclamos/junio/omic.xls'
 	},
 	{
 		"TipoPuntoEstrategico": "Otros",
 		"Pendientes": 11,
 		"Total": 11,
-		"Resueltos": 0
+		"Resueltos": 0,
+		"link": 'datosReclamos/junio/otros.xls'
 	},
 	{
 		"TipoPuntoEstrategico": "Policia",
 		"Pendientes": 105,
 		"Total": 105,
-		"Resueltos": 0
+		"Resueltos": 0,
+		"link": 'datosReclamos/junio/policia.xls'
 	},
 	{
 		"TipoPuntoEstrategico": "Salud",
 		"Pendientes": 6,
 		"Total": 85,
-		"Resueltos": 79
+		"Resueltos": 79,
+		"link": 'datosReclamos/junio/salud.xls'
 	},
 	{
 		"TipoPuntoEstrategico": "SEM",
 		"Pendientes": 0,
 		"Total": 10,
-		"Resueltos": 10
+		"Resueltos": 10,
+		"link": 'datosReclamos/junio/sem.xls'
 	},
 	{
 		"TipoPuntoEstrategico": "Señalización",
 		"Pendientes": 2,
 		"Total": 11,
-		"Resueltos": 9
+		"Resueltos": 9,
+		"link": 'datosReclamos/junio/señalizacion.xls'
 	},
 	{
 		"TipoPuntoEstrategico": "Servicios Públicos",
 		"Pendientes": 50,
 		"Total": 109,
-		"Resueltos": 59
+		"Resueltos": 59,
+		"link": 'datosReclamos/junio/serviciospublicos.xls'
 	},
 	{
 		"TipoPuntoEstrategico": "Tasa Municipal",
 		"Pendientes": 2,
 		"Total": 2,
-		"Resueltos": 0
+		"Resueltos": 0,
+		"link": 'datosReclamos/junio/tasamunicipal.xls'
 	},
 	{
 		"TipoPuntoEstrategico": "Tránsito",
 		"Pendientes": 46,
 		"Total": 79,
-		"Resueltos": 33
+		"Resueltos": 33,
+		"link": 'datosReclamos/junio/transito.xls'
 	},
 	{
 		"TipoPuntoEstrategico": "Transporte",
 		"Pendientes": 1,
 		"Total": 4,
-		"Resueltos": 3
+		"Resueltos": 3,
+		"link": 'datosReclamos/junio/transporte.xls'
 	},
 	{
 		"TipoPuntoEstrategico": "Usina",
 		"Pendientes": 293,
 		"Total": 293,
-		"Resueltos": 0
+		"Resueltos": 0,
+		"link": 'datosReclamos/junio/electrotecnia.xls'
 	}
 ] }
 
@@ -430,14 +454,16 @@ function cargarReclamos(mes){
       })
     document.getElementById("Table").innerHTML="";
     $("#Table").append('<thead><th>Área</th>'+
- 	'<th>Reclamos</th>' + 
- 	'<th>Resueltos</th></thead>');
+	'<th>Reclamos</th>' + 
+	'<th>Resueltos</th>' + 
+ 	'<th>Descargar Info</th></thead>');
     for (i = 0; i < DatosJson.mes.length; i++){
  
  $("#Table").append('<tr>' + 
  	'<td align="center" style="dislay: none;">' + DatosJson.mes[i].TipoPuntoEstrategico + '</td>'+
  	'<td align="center" style="dislay: none;">' + DatosJson.mes[i].Total + '</td>'+
- 	'<td align="center" style="dislay: none;">' + DatosJson.mes[i].Resueltos + '</td>'+'</tr>');
+ 	'<td align="center" style="dislay: none;">' + DatosJson.mes[i].Resueltos + '</td>'+
+ 	'<td align="center" style="dislay: none;"><button type="button" class="btn btn-primary btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off" href="' + DatosJson.mes[i].link + '">Descargar</button></td>'+'</tr>');
     }
 }
 
@@ -457,12 +483,14 @@ function cargarResueltos(mes){
     document.getElementById("Table").innerHTML="";
     $("#Table").append('<thead><th>Área</th>'+
  	'<th>Reclamos</th>' + 
- 	'<th>Resueltos</th></thead>');
-    for (i = 0; i < DatosJson.mes.length; i++){
- 
- $("#Table").append('<tr>' + 
- 	'<td align="center" style="dislay: none;">' + DatosJson.mes[i].TipoPuntoEstrategico + '</td>'+
- 	'<td align="center" style="dislay: none;">' + DatosJson.mes[i].Total + '</td>'+
- 	'<td align="center" style="dislay: none;">' + DatosJson.mes[i].Resueltos + '</td>'+'</tr>');
-    }
+	 '<th>Resueltos</th>' + 
+	  '<th>Descargar Info</th></thead>');
+	for (i = 0; i < DatosJson.mes.length; i++){
+
+		$("#Table").append('<tr>' + 
+		'<td align="center" style="dislay: none;">' + DatosJson.mes[i].TipoPuntoEstrategico + '</td>'+
+		'<td align="center" style="dislay: none;">' + DatosJson.mes[i].Total + '</td>'+
+		'<td align="center" style="dislay: none;">' + DatosJson.mes[i].Resueltos + '</td>'+
+		'<td align="center" style="dislay: none;"><a href="' + DatosJson.mes[i].link + '"><button type="button" class="btn btn-primary btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off">Descargar</button></a></td>'+'</tr>');
+		}
 }
