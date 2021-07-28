@@ -158,7 +158,7 @@ var junio = {"mes":[
 		"TipoPuntoEstrategico": "Transporte",
 		"Pendientes": 1,
 		"Total": 4,
-		"Resueltos": 3,
+		"Resueltos": 0,
 		"link": 'datosReclamos/junio/transporte.xls'
 	},
 	{
