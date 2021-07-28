@@ -122,8 +122,8 @@ var junio = {"mes":[
 	{
 		"TipoPuntoEstrategico": "SEM",
 		"Pendientes": 0,
-		"Total": 10,
-		"Resueltos": 10,
+		"Total": 1,
+		"Resueltos": 1,
 		"link": 'datosReclamos/junio/sem.xls'
 	},
 	{
