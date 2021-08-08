@@ -22,7 +22,8 @@
 
 </head>
 
-<body id="page-top" style="background-color: #fff!important;">
+<body id="page-top" style="background-color: #fff!important">
+    <div id="contenido" style="display:none">
 
     <!-- Page Wrapper -->
     <div id="wrapper">
@@ -395,6 +396,22 @@
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
 
+</div>
+<div class="container text-center mt-4" id="login" style="max-width: 400px; height: 50vh;">
+    <br><br>
+    <form class="form-signin px-4 mt-4">
+        <img width="300" height="85" src="/logo.png" class="attachment-large size-large" alt="" loading="lazy" srcset="/logo.png" sizes="(max-width: 401px) 100vw, 401px">
+        <br><br>
+        <label for="inputEmail" class="sr-only">Usuario</label>
+        <input type="text" id="user" class="form-control mb-1" placeholder="Usuario" required="" autofocus="">
+        <label for="inputPassword" class="sr-only">Contraseña</label>
+        <input type="password" id="pass" class="form-control" placeholder="Contraseña" required="">
+        <br>
+        <button class="btn btn-lg btn-primary btn-block" id="boton">Ingresar</button>
+    </form>
+    <p class="mt-5 mb-3 text-muted">© Municipalidad de Necochea Ordenamiento Urbano - 2021</p>
+</div>
 </body>
 
+<script src="js/carrousel.js"></script>
 </html>
