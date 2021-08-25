@@ -589,6 +589,11 @@ var abril = {"mes":[
 	}
 ] }
 
+function indicador(e){
+	const resultado = (1+e.Resueltos/e.Total)/(1+Math.pow(1.002, (e.Total-e.Resueltos)));
+	return (resultado*10).toFixed(2);
+}
+
 function cargarReclamos(mes){
     var DatosJson = JSON.parse(JSON.stringify(mes));
     console.log(DatosJson.mes.length);
@@ -613,8 +618,8 @@ function cargarReclamos(mes){
  	'<td align="center" style="dislay: none;">' + DatosJson.mes[i].TipoPuntoEstrategico + '</td>'+
  	'<td align="center" style="dislay: none;">' + DatosJson.mes[i].Total + '</td>'+
  	'<td align="center" style="dislay: none;">' + DatosJson.mes[i].Resueltos + '</td>'+
- 	'<td align="center" style="dislay: none;"><a href="' + DatosJson.mes[i].link + '"><button type="button" class="btn btn-primary btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off">Descargar</button></a></td>'+'</tr>');
-	}
+ 	'<td align="center" style="dislay: none;"><button type="button" class="btn btn-primary btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off" href="' + DatosJson.mes[i].link + '">Descargar</button></td>'+'</tr>');
+    }
 }
 
 function cargarResueltos(mes){
@@ -634,6 +639,7 @@ function cargarResueltos(mes){
     $("#Table").append('<thead><th>Área</th>'+
  	'<th>Reclamos</th>' + 
 	 '<th>Resueltos</th>' + 
+	 '<th>Desempeño</th>' + 
 	  '<th>Descargar Info</th></thead>');
 	for (i = 0; i < DatosJson.mes.length; i++){
 
@@ -641,6 +647,7 @@ function cargarResueltos(mes){
 		'<td align="center" style="dislay: none;">' + DatosJson.mes[i].TipoPuntoEstrategico + '</td>'+
 		'<td align="center" style="dislay: none;">' + DatosJson.mes[i].Total + '</td>'+
 		'<td align="center" style="dislay: none;">' + DatosJson.mes[i].Resueltos + '</td>'+
+		'<td align="center" style="dislay: none;">' + indicador(DatosJson.mes[i]) + '</td>'+
 		'<td align="center" style="dislay: none;"><a href="' + DatosJson.mes[i].link + '"><button type="button" class="btn btn-primary btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off">Descargar</button></a></td>'+'</tr>');
 		}
 }
