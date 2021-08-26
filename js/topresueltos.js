@@ -590,9 +590,7 @@ var abril = {"mes":[
 ] }
 
 function indicador(e){
-	console.log(Math.pow(((e.resueltos/e.total)+0.001) , 1/5));
-	console.log((Math.pow(1.005, (e.Total-e.Resueltos))));
-	const resultado = ( Math.pow(((e.resueltos/e.total)+0.001) , 1/5) ) / (Math.pow(1.005, (e.Total-e.Resueltos))));
+	const resultado = ( Math.pow(((e.Resueltos/e.Total)+0.001) , 1/5) ) / (Math.pow(1.005, (e.Total-e.Resueltos))));
 	return (resultado*10).toFixed(2);
 }
 
