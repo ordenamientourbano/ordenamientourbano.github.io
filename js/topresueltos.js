@@ -159,9 +159,9 @@ var junio = {"mes":[
 	},
 	{
 		"TipoPuntoEstrategico": "Comercio",
-		"Pendientes": 263,
+		"Pendientes": 163,
 		"Total": 575,
-		"Resueltos": 312,
+		"Resueltos": 412,
 		"link": 'datosReclamos/junio/comercio.xls'
 	},
 	{
@@ -329,9 +329,9 @@ var mayo = {"mes":[
 	},
 	{
 		"TipoPuntoEstrategico": "Comercio",
-		"Pendientes": 241,
+		"Pendientes": 191,
 		"Total": 410,
-		"Resueltos": 169
+		"Resueltos": 219
 	},
 	{
 		"TipoPuntoEstrategico": "Defensa Civil",
