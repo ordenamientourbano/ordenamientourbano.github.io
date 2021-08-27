@@ -201,9 +201,9 @@ var junio = {"mes":[
 	},
 	{
 		"TipoPuntoEstrategico": "Higiene Urbana",
-		"Pendientes": 573,
+		"Pendientes": 0,
 		"Total": 3051,
-		"Resueltos": 2478,
+		"Resueltos": 3051,
 		"link": 'datosReclamos/junio/higieneurbana.xls'
 	},
 	{
