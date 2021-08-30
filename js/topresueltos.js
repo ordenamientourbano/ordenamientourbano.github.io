@@ -594,6 +594,21 @@ function indicador(e){
 	return (resultado*10).toFixed(2);
 }
 
+
+function color(e){
+	if (indicador(e)>=6){
+		return 'verde';
+	}
+	else{
+		if(indicador(e)>=4){
+			return 'amarillo';
+		}
+		else{
+			return 'rojo';
+		}
+	}
+}
+
 function cargarReclamos(mes){
     var DatosJson = JSON.parse(JSON.stringify(mes));
     console.log(DatosJson.mes.length);
@@ -618,6 +633,36 @@ function cargarReclamos(mes){
  	'<td align="center" style="dislay: none;">' + DatosJson.mes[i].TipoPuntoEstrategico + '</td>'+
  	'<td align="center" style="dislay: none;">' + DatosJson.mes[i].Total + '</td>'+
  	'<td align="center" style="dislay: none;">' + DatosJson.mes[i].Resueltos + '</td>'+
+ 	'<td align="center" style="dislay: none;"><button type="button" class="btn btn-primary btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off" href="' + DatosJson.mes[i].link + '">Descargar</button></td>'+'</tr>');
+    }
+}
+
+function cargarDesempeño(mes){
+    var DatosJson = JSON.parse(JSON.stringify(mes));
+    console.log(DatosJson.mes.length);
+    DatosJson.mes.sort(function (a, b) {
+        if (indicador(a) > indicador(b)) {
+          return -1;
+        }
+        if (a.Total < b.Total) {
+          return 1;
+        }
+        // a must be equal to b
+        return 0;
+      })
+    document.getElementById("Table").innerHTML="";
+    $("#Table").append('<thead><th>Área</th>'+
+	'<th>Reclamos</th>' + 
+	'<th>Resueltos</th>' + 
+	'<th>Desempeño</th>' + 
+ 	'<th>Descargar Info</th></thead>');
+    for (i = 0; i < DatosJson.mes.length; i++){
+ 
+ $("#Table").append('<tr class="' + color(DatosJson.mes[i]) + '">' + 
+ 	'<td align="center" style="dislay: none;">' + DatosJson.mes[i].TipoPuntoEstrategico + '</td>'+
+ 	'<td align="center" style="dislay: none;">' + DatosJson.mes[i].Total + '</td>'+
+ 	'<td align="center" style="dislay: none;">' + DatosJson.mes[i].Resueltos + '</td>'+
+ 	'<td align="center" style="dislay: none;">' + indicador(DatosJson.mes[i]) + '</td>'+
  	'<td align="center" style="dislay: none;"><button type="button" class="btn btn-primary btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off" href="' + DatosJson.mes[i].link + '">Descargar</button></td>'+'</tr>');
     }
 }
