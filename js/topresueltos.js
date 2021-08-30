@@ -641,10 +641,10 @@ function cargarDesempeño(mes){
     var DatosJson = JSON.parse(JSON.stringify(mes));
     console.log(DatosJson.mes.length);
     DatosJson.mes.sort(function (a, b) {
-        if (indicador(a) > indicador(b)) {
+        if (parseFloat(indicador(a)) > parseFloat(indicador(b))) {
           return -1;
         }
-        if (indicador(a) < indicador(b)) {
+        if (parseFloat(indicador(a)) < parseFloat(indicador(b))) {
           return 1;
         }
         // a must be equal to b
