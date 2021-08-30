@@ -644,7 +644,7 @@ function cargarDesempeño(mes){
         if (indicador(a) > indicador(b)) {
           return -1;
         }
-        if (a.Total < b.Total) {
+        if (indicador(a) < indicador(b)) {
           return 1;
         }
         // a must be equal to b
