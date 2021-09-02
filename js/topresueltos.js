@@ -652,8 +652,6 @@ function cargarDesempeño(mes){
       })
     document.getElementById("Table").innerHTML="";
     $("#Table").append('<thead><th>Área</th>'+
-	'<th>Reclamos</th>' + 
-	'<th>Resueltos</th>' + 
 	'<th>Desempeño</th>' + 
  	'<th>Descargar Info</th></thead>');
     for (i = 0; i < DatosJson.mes.length; i++){
