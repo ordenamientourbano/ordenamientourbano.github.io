@@ -660,8 +660,6 @@ function cargarDesempeño(mes){
  
  $("#Table").append('<tr class="' + color(DatosJson.mes[i]) + '">' + 
  	'<td align="center" style="dislay: none;">' + DatosJson.mes[i].TipoPuntoEstrategico + '</td>'+
- 	'<td align="center" style="dislay: none;">' + DatosJson.mes[i].Total + '</td>'+
- 	'<td align="center" style="dislay: none;">' + DatosJson.mes[i].Resueltos + '</td>'+
  	'<td align="center" style="dislay: none;">' + indicador(DatosJson.mes[i]) + '</td>'+
  	'<td align="center" style="dislay: none;"><a href="' + DatosJson.mes[i].link + '"><button type="button" class="btn btn-primary btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off" href="' + DatosJson.mes[i].link + '">Descargar</button></td></a>'+'</tr>');
     }
