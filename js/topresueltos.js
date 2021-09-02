@@ -594,6 +594,9 @@ function indicador(e){
 	return (resultado*10).toFixed(2);
 }
 
+function ocultarTabla(){
+	document.getElementById("Table").innerHTML="";
+}
 
 function color(e){
 	if (indicador(e)>=6){
