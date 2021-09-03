@@ -1,0 +1,14 @@
+
+tr.verde{
+    background-color: #8bc34a4d;
+}
+tr.amarillo{
+    background-color: #c3c14a4d;
+}
+tr.rojo{
+    background-color: #c34e4a4d;
+}
+
+td{
+    border-color: #474747!important;
+}
