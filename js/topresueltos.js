@@ -825,12 +825,10 @@ function cargarAlertas(mes){
         return 0;
       })
     document.getElementById("alertas").innerHTML="";
-    $("#Table").append('<thead><th>Área</th>'+
-	'<th>Desempeño</th>' + 
- 	'<th>Descargar Info</th></thead>');
+    $("#alertas").append('<div class="col-xl-3 col-md-6 mb-4">');
     for (i = 0; i < DatosJson.mes.length; i++){
 	 if(indicador(DatosJson.mes[i])<4){
-		 $("#alertas").append('<div class="col-xl-3 col-md-6 mb-4"><div class="card border-left-warning shadow h-100 py-2"><div class="card-body"><div class="row no-gutters align-items-center"><div class="col mr-2"><div class="text-xs font-weight-bold text-warning text-uppercase mb-1">'+DatosJson.mes[i].TipoPuntoEstrategico+'</div><div class="h5 mb-0 font-weight-bold text-gray-800">18</div></div><div class="col-auto"><i class="fas fa-comments fa-2x text-gray-300"></i></div></div></div></div>');
+		 $("#alertas").append('<div class="card border-left-warning shadow h-100 py-2"><div class="card-body"><div class="row no-gutters align-items-center"><div class="col mr-2"><div class="text-xs font-weight-bold text-warning text-uppercase mb-1">'+DatosJson.mes[i].TipoPuntoEstrategico+'</div><div class="h5 mb-0 font-weight-bold text-gray-800">18</div></div><div class="col-auto"><i class="fas fa-comments fa-2x text-gray-300"></i></div></div></div>');
           }
     }
     $("#alertas").append('</div>');
