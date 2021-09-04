@@ -1,5 +1,5 @@
 
-var agosto = {"agosto":[
+var agosto = {"mes":[
 	{
 		"TipoPuntoEstrategico": "Bromatologia",
 		"Pendientes": 0,
