@@ -827,7 +827,7 @@ function cargarAlertas(mes){
     document.getElementById("alertas").innerHTML="";
     for (i = 0; i < DatosJson.mes.length; i++){
 	 if(indicador(DatosJson.mes[i])<4){
-		 $("#alertas").append('<div class="col-xl-3 col-md-6 mb-4"><div class="card border-left-warning shadow h-100 py-2"><div class="card-body"><div class="row no-gutters align-items-center"><div class="col mr-2"><div class="text-xs font-weight-bold text-warning text-uppercase mb-1">'+DatosJson.mes[i].TipoPuntoEstrategico+'</div><div class="h5 mb-0 font-weight-bold text-gray-800">Reclamos Totales'+DatosJson.mes[i].Reclamos+' </div><div class="h5 mb-0 font-weight-bold text-gray-800">Reclamos sin resolver'+DatosJson.mes[i].Pendientes+'</div></div><div class="col-auto"><i class="fas fa-comments fa-2x text-gray-300"></i></div></div></div></div></div>');
+		 $("#alertas").append('<div class="col-xl-3 col-md-6 mb-4"><div class="card border-left-warning shadow h-100 py-2"><div class="card-body"><div class="row no-gutters align-items-center"><div class="col mr-2"><div class="text-xs font-weight-bold text-warning text-uppercase mb-1">'+DatosJson.mes[i].TipoPuntoEstrategico+'</div><div class="h5 mb-0 font-weight-bold text-gray-800">Reclamos Totales: '+DatosJson.mes[i].Total+' </div><br><div class="h5 mb-0 font-weight-bold text-gray-800">Reclamos sin resolver: '+DatosJson.mes[i].Pendientes+'</div></div><div class="col-auto"><i class="fas fa-comments fa-2x text-gray-300"></i></div></div></div></div></div>');
           }
     }
 }
