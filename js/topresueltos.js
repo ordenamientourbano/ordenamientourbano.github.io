@@ -44,7 +44,7 @@ var agosto = {"mes":[
 	},
 	{
 		"TipoPuntoEstrategico": "Higiene Urbana",
-		"Pendientes": 228,
+		"Pendientes": 48,
 		"Total": 1645,
 		"Resueltos": 1426,
 		"link": 'datosReclamos/agosto/higieneurbana.xls'
@@ -732,7 +732,7 @@ var abril = {"mes":[
 ] }
 
 function indicador(e){
-	const resultado = ( Math.pow(((e.Resueltos/e.Total)+0.001) , 1/5))/ (Math.pow(1.005, (e.Total-e.Resueltos)));
+	const resultado = ( Math.pow(((e.Resueltos/e.Total)+0.001) , 1/5))/ (Math.pow(1.005, (e.Pendientes)));
 	return (resultado*10).toFixed(2);
 }
 
