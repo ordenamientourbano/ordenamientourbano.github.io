@@ -830,11 +830,7 @@ function cargarAlertas(mes){
  	'<th>Descargar Info</th></thead>');
     for (i = 0; i < DatosJson.mes.length; i++){
 	 if(indicador(DatosJson.mes[i])<4){
-		 $("#Table").append('
-				    
-				    
-				    
-	               <div class="col-xl-3 col-md-6 mb-4">
+		 $("#alertas").append('<div class="col-xl-3 col-md-6 mb-4">
                             <div class="card border-left-warning shadow h-100 py-2">
                                 <div class="card-body">
                                     <div class="row no-gutters align-items-center">
@@ -849,10 +845,7 @@ function cargarAlertas(mes){
                                     </div>
                                 </div>
                             </div>
-</div>
-				    
-				    
-				    ');
+</div>');
           }
     }	      
 }
