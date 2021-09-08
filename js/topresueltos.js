@@ -30,9 +30,9 @@ var agosto = {"mes":[
 	},
 	{
 		"TipoPuntoEstrategico": "Ente Vial ",
-		"Pendientes": 56,
+		"Pendientes": 9,
 		"Total": 276,
-		"Resueltos": 220,
+		"Resueltos": 267,
 		"link": 'datosReclamos/agosto/entevial.xls'
 	},
 	{
