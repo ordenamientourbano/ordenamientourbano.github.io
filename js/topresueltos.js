@@ -85,13 +85,6 @@ var agosto = {"mes":[
 		"link": 'datosReclamos/agosto/obrassanitarias.xls'
 	},
 	{
-		"TipoPuntoEstrategico": "Policia",
-		"Pendientes": 60,
-		"Total": 60,
-		"Resueltos": 0,
-		"link": 'datosReclamos/agosto/policia.xls'
-	},
-	{
 		"TipoPuntoEstrategico": "Salud",
 		"Pendientes": 9,
 		"Total": 9,
@@ -132,13 +125,6 @@ var agosto = {"mes":[
 		"Total": 2,
 		"Resueltos": 1,
 		"link": 'datosReclamos/agosto/transporte.xls'
-	},
-	{
-		"TipoPuntoEstrategico": "Usina",
-		"Pendientes": 126,
-		"Total": 126,
-		"Resueltos": 0,
-		"link": 'datosReclamos/agosto/usina.xls'
 	}
 ]}
 var julio = {"mes":[
@@ -241,13 +227,6 @@ var julio = {"mes":[
 		"link": 'datosReclamos/julio/otros.xls'
 	},
 	{
-		"TipoPuntoEstrategico": "Policia",
-		"Pendientes": 55,
-		"Total": 55,
-		"Resueltos": 0,
-		"link": 'datosReclamos/julio/policia.xls'
-	},
-	{
 		"TipoPuntoEstrategico": "Salud",
 		"Pendientes": 8,
 		"Total": 13,
@@ -281,13 +260,6 @@ var julio = {"mes":[
 		"Total": 6,
 		"Resueltos": 3,
 		"link": 'datosReclamos/julio/transporte.xls'
-	},
-	{
-		"TipoPuntoEstrategico": "Usina",
-		"Pendientes": 171,
-		"Total": 171,
-		"Resueltos": 0,
-		"link": 'datosReclamos/julio/usina.xls'
 	}
 ]}
 
@@ -398,13 +370,6 @@ var junio = {"mes":[
 		"link": 'datosReclamos/junio/otros.xls'
 	},
 	{
-		"TipoPuntoEstrategico": "Policia",
-		"Pendientes": 105,
-		"Total": 105,
-		"Resueltos": 0,
-		"link": 'datosReclamos/junio/policia.xls'
-	},
-	{
 		"TipoPuntoEstrategico": "Salud",
 		"Pendientes": 6,
 		"Total": 85,
@@ -452,13 +417,6 @@ var junio = {"mes":[
 		"Total": 4,
 		"Resueltos": 0,
 		"link": 'datosReclamos/junio/transporte.xls'
-	},
-	{
-		"TipoPuntoEstrategico": "Usina",
-		"Pendientes": 293,
-		"Total": 293,
-		"Resueltos": 0,
-		"link": 'datosReclamos/junio/electrotecnia.xls'
 	}
 ] }
 
@@ -542,12 +500,6 @@ var mayo = {"mes":[
 		"Resueltos": 1
 	},
 	{
-		"TipoPuntoEstrategico": "Policia",
-		"Pendientes": 85,
-		"Total": 85,
-		"Resueltos": 0
-	},
-	{
 		"TipoPuntoEstrategico": "Salud",
 		"Pendientes": 12,
 		"Total": 81,
@@ -582,12 +534,6 @@ var mayo = {"mes":[
 		"Pendientes": 16,
 		"Total": 35,
 		"Resueltos": 19
-	},
-	{
-		"TipoPuntoEstrategico": "Usina",
-		"Pendientes": 169,
-		"Total": 169,
-		"Resueltos": 0
 	}
 ] }
 var abril = {"mes":[
@@ -676,12 +622,6 @@ var abril = {"mes":[
 		"Resueltos": 0
 	},
 	{
-		"TipoPuntoEstrategico": "Policia",
-		"Pendientes": 103,
-		"Total": 103,
-		"Resueltos": 0
-	},
-	{
 		"TipoPuntoEstrategico": "Salud",
 		"Pendientes": 0,
 		"Total": 96,
@@ -722,14 +662,12 @@ var abril = {"mes":[
 		"Pendientes": 6,
 		"Total": 11,
 		"Resueltos": 5
-	},
-	{
-		"TipoPuntoEstrategico": "Usina",
-		"Pendientes": 153,
-		"Total": 153,
-		"Resueltos": 0
 	}
 ] }
+
+
+/*  */
+
 
 function indicador(e){
 	const resultado = ( Math.pow(((e.Resueltos/e.Total)+0.001) , 1/5))/ (Math.pow(1.005, (e.Pendientes)));
@@ -754,33 +692,6 @@ function color(e){
 	}
 }
 
-function cargarReclamos(mes){
-    var DatosJson = JSON.parse(JSON.stringify(mes));
-    console.log(DatosJson.mes.length);
-    DatosJson.mes.sort(function (a, b) {
-        if (a.Total > b.Total) {
-          return -1;
-        }
-        if (a.Total < b.Total) {
-          return 1;
-        }
-        // a must be equal to b
-        return 0;
-      })
-    document.getElementById("Table").innerHTML="";
-    $("#Table").append('<thead><th>Área</th>'+
-	'<th>Reclamos</th>' + 
-	'<th>Resueltos</th>' + 
- 	'<th>Descargar Info</th></thead>');
-    for (i = 0; i < DatosJson.mes.length; i++){
- 
- $("#Table").append('<tr>' + 
- 	'<td align="center" style="dislay: none;">' + DatosJson.mes[i].TipoPuntoEstrategico + '</td>'+
- 	'<td align="center" style="dislay: none;">' + DatosJson.mes[i].Total + '</td>'+
- 	'<td align="center" style="dislay: none;">' + DatosJson.mes[i].Resueltos + '</td>'+
- 	'<td align="center" style="dislay: none;"><a href="' + DatosJson.mes[i].link + '"><button type="button" class="btn btn-primary btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off">Descargar</button></a></td>'+'</tr>');
-    }
-}
 
 function cargarDesempeño(mes){
     var DatosJson = JSON.parse(JSON.stringify(mes));
@@ -798,22 +709,24 @@ function cargarDesempeño(mes){
     document.getElementById("Table").innerHTML="";
     $("#Table").append('<thead><th>Área</th>'+
 	'<th>Desempeño</th>' + 
+	'<th>Reclamos</th>' + 
+	'<th>Resueltos</th>' + 
  	'<th>Descargar Info</th></thead>');
     for (i = 0; i < DatosJson.mes.length; i++){
  
  $("#Table").append('<tr class="' + color(DatosJson.mes[i]) + '">' + 
  	'<td align="center" style="dislay: none;">' + DatosJson.mes[i].TipoPuntoEstrategico + '</td>'+
  	'<td align="center" style="dislay: none;">' + indicador(DatosJson.mes[i]) + '</td>'+
+	'<td align="center" style="dislay: none;">' + DatosJson.mes[i].Total + '</td>'+
+	'<td align="center" style="dislay: none;">' + DatosJson.mes[i].Resueltos + '</td>'+
  	'<td align="center" style="dislay: none;"><a href="' + DatosJson.mes[i].link + '"><button type="button" class="btn btn-primary btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off" href="' + DatosJson.mes[i].link + '">Descargar</button></td></a>'+'</tr>');
     }
 }
 
 
-console.log('funcionando');
-
 function cargarAlertas(mes){
     var DatosJson = JSON.parse(JSON.stringify(mes));
-    console.log(DatosJson.mes.length);
+    console.log(DatosJson);
     DatosJson.mes.sort(function (a, b) {
         if (parseFloat(indicador(a)) > parseFloat(indicador(b))) {
           return 1;
@@ -835,34 +748,106 @@ function cargarAlertas(mes){
 
 
 
+const meses = [mayo,junio,julio,agosto];
+
+var Areas = [
+	Gobierno = {  
+		nombre: "Gobierno",  
+		secretarias : ['Comercio',"Señalización", "Tránsito","Guardaparque","Defensa Civil","SEM"],
+	},
+	DesarrolloSocial = {  
+		nombre: "Desarrollo Social",  
+		secretarias : ["Desarrollo Social"],
+	},
+	ObrasPublicas = {  
+		nombre: "Obras Publicas",  
+		secretarias : ["Servicios Públicos","Obras Sanitarias", "Medio ambiente","Obras Privadas","Infraestructura","Higiene Urbana"],
+	},
+	Salud = {  
+		nombre: "Salud",  
+		secretarias : ["Salud","Bromatologia","Mascotas"],
+	},
+	EnteVial = {  
+		nombre: "EnteVial",  
+		secretarias : ["Ente Vial "],
+	},
+]
 
 
-function cargarResueltos(mes){
-    var DatosJson = JSON.parse(JSON.stringify(mes));
-    console.log(DatosJson.mes.length);
-    DatosJson.mes.sort(function (a, b) {
-        if (a.Resueltos > b.Resueltos) {
-          return -1;
-        }
-        if (a.Resueltos < b.Resueltos) {
-          return 1;
-        }
-        // a must be equal to b
-        return 0;
-      })
-    document.getElementById("Table").innerHTML="";
-    $("#Table").append('<thead><th>Área</th>'+
- 	'<th>Reclamos</th>' + 
-	 '<th>Resueltos</th>' + 
-	 '<th>Desempeño</th>' + 
-	  '<th>Descargar Info</th></thead>');
-	for (i = 0; i < DatosJson.mes.length; i++){
+  // === include 'setup' then 'config' above ===
 
-		$("#Table").append('<tr>' + 
-		'<td align="center" style="dislay: none;">' + DatosJson.mes[i].TipoPuntoEstrategico + '</td>'+
-		'<td align="center" style="dislay: none;">' + DatosJson.mes[i].Total + '</td>'+
-		'<td align="center" style="dislay: none;">' + DatosJson.mes[i].Resueltos + '</td>'+
-		'<td align="center" style="dislay: none;">' + indicador(DatosJson.mes[i]) + '</td>'+
-		'<td align="center" style="dislay: none;"><a href="' + DatosJson.mes[i].link + '"><button type="button" class="btn btn-primary btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off">Descargar</button></a></td>'+'</tr>');
+/* Graficos de desempeño anual */
+
+  const labels = ['Secretarías:'];
+
+
+
+  numeros = [0]
+
+  const data = {
+	labels: labels,
+	datasets: [{
+	  label: 'Desempeño últimos 4 meses por Secretaria',
+	  backgroundColor: '#670066',
+	  borderColor: 'black',
+	  data: numeros,
+	}]
+  };
+
+
+  const config = {
+	type: 'bar',
+	data: data,
+	options: {
+		responsive: true,
+		scales: {
+		  y: {
+			min: 0,
+			max: 50,
+		  }
 		}
+	  },
+  }
+
+
+ function desempeñoMes(area,mes) {
+	    var total = 0;
+   		var DatosJson = JSON.parse(JSON.stringify(mes));
+   		console.log(DatosJson);
+		for (i = 0; i < DatosJson.mes.length; i++){
+			if(DatosJson.mes[i].TipoPuntoEstrategico==area){
+				total = (total) + parseFloat(indicador(DatosJson.mes[i]));
+				console.log(total)
+			}
+		}
+		return total;
 }
+
+ function desempeñoAño(area){
+	 var total = 0;
+	 meses.forEach( month => total = (total) + desempeñoMes(area,month) )
+	 return total/meses.length;
+ }
+
+ function cargarArea(e){
+	var total = 0
+	e.secretarias.forEach(
+		sec=> total = total + parseFloat(desempeñoAño(sec))
+	)
+	labels.push(e.nombre)
+	numeros.push((total/e.secretarias.length).toFixed(2))
+ }
+
+
+Areas.forEach(
+	area => cargarArea(area)
+);
+
+
+console.log(desempeñoAño('Ente Vial '))
+	
+	var myChart = new Chart(
+		document.getElementById('myChart'),
+		config
+	  );
+/* Graficos de desempeño anual */
