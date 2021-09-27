@@ -670,7 +670,7 @@ var abril = {"mes":[
 
 
 function indicador(e){
-	const resultado = ( Math.pow(((e.Resueltos/e.Total)+0.001) , 1/5))/ (Math.pow(1.005, (e.Pendientes)));
+	var resultado = ( Math.pow(((e.Resueltos/e.Total)+0.001) , 1/5))/ (Math.pow(1.005, (e.Pendientes)));
 	if (e.Pendientes<=30){
 		resultado = resultado + 0.5 * (1-e.Pendientes/30)
 	}
