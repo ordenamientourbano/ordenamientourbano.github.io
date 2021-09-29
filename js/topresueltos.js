@@ -670,10 +670,7 @@ var abril = {"mes":[
 
 
 function indicador(e){
-	var resultado = ( Math.pow(((e.Resueltos/e.Total)+0.001) , 1/5))/ (Math.pow(1.005, (e.Pendientes)));
-	if (e.Pendientes<=30 && e.Total<=30 && resultado <= 0.4){
-		resultado = resultado + 0.4 * (Math.pow(3, (e.Pendientes/-80)))
-	}
+	const resultado = ( Math.pow(((e.Resueltos/e.Total)+0.001) , 1/5))/ (Math.pow(1.005, (e.Pendientes)));
 	return (resultado*10).toFixed(2);
 }
 
@@ -698,7 +695,6 @@ function color(e){
 
 function cargarDesempeño(mes){
     var DatosJson = JSON.parse(JSON.stringify(mes));
-    console.log(DatosJson.mes.length);
     DatosJson.mes.sort(function (a, b) {
         if (parseFloat(indicador(a)) > parseFloat(indicador(b))) {
           return -1;
@@ -782,6 +778,7 @@ var Areas = [
 /* Graficos de desempeño anual */
 
   const labels = ['Secretarías:'];
+  const labelsMeses = ['mayo','junio','julio','agosto'];
 
 
 
@@ -798,29 +795,231 @@ var Areas = [
   };
 
 
-  const config = {
-	type: 'bar',
-	data: data,
-	options: {
-		responsive: true,
-		scales: {
-		  y: {
-			min: 0,
-			max: 50,
-		  }
+function mensual(secretaria,month){
+	var info = new Object()
+	info.totales = 0
+	info.resueltos = 0
+	info.pendientes = 0
+	for (i = 0; i < month.mes.length; i++){
+		if(month.mes[i].TipoPuntoEstrategico==secretaria){
+			info.totales = info.totales + month.mes[i].Total
+			info.resueltos = info.resueltos + month.mes[i].Resueltos
+			info.pendientes = info.pendientes + month.mes[i].Pendientes
 		}
-	  },
-  }
+	}
+	return info;
+}
+
+function barrasSecretaria(sec){
+	totales = [0,0,0,0];
+	resueltos = [0,0,0,0];
+	pendientes = [0,0,0,0];
+  console.log(sec)
+  sec.secretarias.forEach(function(secretaria){
+	  k = 0;
+	  meses.forEach(function(month){
+		totales[k] = totales[k] + mensual(secretaria,month).totales
+		resueltos[k] = resueltos[k] + mensual(secretaria,month).resueltos
+		pendientes[k] = pendientes[k] + mensual(secretaria,month).pendientes
+		k= k+1
+	  });
+  })
+  return [totales,resueltos,pendientes]
+}
 
 
+	   const dataGob = {
+		labels: labelsMeses,
+		datasets: [{
+		  label: 'Totales',
+		  backgroundColor: '#67b7dc',
+		  borderColor: 'black',
+		  data: barrasSecretaria(Areas[0])[0],
+		},{
+			label: 'Resueltos',
+			backgroundColor: '#fdd400',
+			borderColor: 'black',
+			data: barrasSecretaria(Areas[0])[1],
+		  },{
+			label: 'Pendientes',
+			backgroundColor: '#84b761',
+			borderColor: 'black',
+			data: barrasSecretaria(Areas[0])[2],
+		  }]
+	  };
+	
+	  const dataDes = {
+		labels: labelsMeses,
+		datasets: [{
+		  label: 'Totales',
+		  backgroundColor: '#67b7dc',
+		  borderColor: 'black',
+		  data: barrasSecretaria(Areas[1])[0],
+		},{
+			label: 'Resueltos',
+			backgroundColor: '#fdd400',
+			borderColor: 'black',
+			data: barrasSecretaria(Areas[1])[1],
+		  },{
+			label: 'Pendientes',
+			backgroundColor: '#84b761',
+			borderColor: 'black',
+			data: barrasSecretaria(Areas[1])[2],
+		  }]
+	  };
+	
+	  const dataObr = {
+		labels: labelsMeses,
+		datasets: [{
+		  label: 'Totales',
+		  backgroundColor: '#67b7dc',
+		  borderColor: 'black',
+		  data: barrasSecretaria(Areas[2])[0],
+		},{
+			label: 'Resueltos',
+			backgroundColor: '#fdd400',
+			borderColor: 'black',
+			data: barrasSecretaria(Areas[2])[1],
+		  },{
+			label: 'Pendientes',
+			backgroundColor: '#84b761',
+			borderColor: 'black',
+			data: barrasSecretaria(Areas[2])[2],
+		  }]
+	  };
+	
+	  const dataSal = {
+		labels: labelsMeses,
+		datasets: [{
+		  label: 'Totales',
+		  backgroundColor: '#67b7dc',
+		  borderColor: 'black',
+		  data: barrasSecretaria(Areas[3])[0],
+		},{
+			label: 'Resueltos',
+			backgroundColor: '#fdd400',
+			borderColor: 'black',
+			data: barrasSecretaria(Areas[3])[1],
+		  },{
+			label: 'Pendientes',
+			backgroundColor: '#84b761',
+			borderColor: 'black',
+			data: barrasSecretaria(Areas[3])[2],
+		  }]
+	  };
+	
+	  const dataEnt = {
+		labels: labelsMeses,
+		datasets: [{
+		  label: 'Totales',
+		  backgroundColor: '#67b7dc',
+		  borderColor: 'black',
+		  data: barrasSecretaria(Areas[4])[0],
+		},{
+			label: 'Resueltos',
+			backgroundColor: '#fdd400',
+			borderColor: 'black',
+			data: barrasSecretaria(Areas[4])[1],
+		  },{
+			label: 'Pendientes',
+			backgroundColor: '#84b761',
+			borderColor: 'black',
+			data: barrasSecretaria(Areas[4])[2],
+		  }]
+	  };
+	
+
+
+	  const config = {
+		type: 'bar',
+		data: data,
+		options: {
+			responsive: true,
+			scales: {
+			  y: {
+				min: 0,
+				max: 50,
+			  }
+			}
+		  },
+	  }
+	
+	  const configgob = {
+		 type: 'bar',
+		 data: dataGob,
+		 options: {
+			 responsive: true,
+			 scales: {
+			   y: {
+				 min: 0,
+				 max: 50,
+			   }
+			 }
+		   },
+	   }
+	
+	   const configdes = {
+		  type: 'bar',
+		  data: dataDes,
+		  options: {
+			  responsive: true,
+			  scales: {
+				y: {
+				  min: 0,
+				  max: 50,
+				}
+			  }
+			},
+		}
+	
+		const configobr = {
+		   type: 'bar',
+		   data: dataObr,
+		   options: {
+			   responsive: true,
+			   scales: {
+				 y: {
+				   min: 0,
+				   max: 50,
+				 }
+			   }
+			 },
+		 }
+	
+		 const configsal = {
+			type: 'bar',
+			data: dataSal,
+			options: {
+				responsive: true,
+				scales: {
+				  y: {
+					min: 0,
+					max: 50,
+				  }
+				}
+			  },
+		  }
+	
+		  const configent = {
+			 type: 'bar',
+			 data: dataEnt,
+			 options: {
+				 responsive: true,
+				 scales: {
+				   y: {
+					 min: 0,
+					 max: 50,
+				   }
+				 }
+			   },
+		   }
+	
  function desempeñoMes(area,mes) {
 	    var total = 0;
    		var DatosJson = JSON.parse(JSON.stringify(mes));
-   		console.log(DatosJson);
 		for (i = 0; i < DatosJson.mes.length; i++){
 			if(DatosJson.mes[i].TipoPuntoEstrategico==area){
 				total = (total) + parseFloat(indicador(DatosJson.mes[i]));
-				console.log(total)
 			}
 		}
 		return total;
@@ -847,10 +1046,29 @@ Areas.forEach(
 );
 
 
-console.log(desempeñoAño('Ente Vial '))
 	
-	var myChart = new Chart(
-		document.getElementById('myChart'),
-		config
+  var gob = new Chart(
+	  document.getElementById('gob'),
+	  configgob
+	);
+	
+	var des = new Chart(
+		document.getElementById('des'),
+		configdes
 	  );
+	
+	  var obr = new Chart(
+		  document.getElementById('obr'),
+		  configobr
+		);
+	
+		var sal = new Chart(
+			document.getElementById('sal'),
+			configsal
+		  );
+	
+		  var ent = new Chart(
+			  document.getElementById('ent'),
+			  configent
+			);
 /* Graficos de desempeño anual */
