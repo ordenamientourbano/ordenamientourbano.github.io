@@ -1,4 +1,132 @@
 
+var septiembre = {"mes":[
+	{
+		"TipoPuntoEstrategico": "Bromatologia",
+		"Pendientes": 0,
+		"Total": 8,
+		"Resueltos": 8,
+		"link": 'datosReclamos/septiembre/bromatologia.xls'
+	},
+	{
+		"TipoPuntoEstrategico": "Comercio",
+		"Pendientes": 44,
+		"Total": 197,
+		"Resueltos": 153,
+		"link": 'datosReclamos/septiembre/comercio.xls'
+	},
+	{
+		"TipoPuntoEstrategico": "Defensa Civil",
+		"Pendientes": 3,
+		"Total": 78,
+		"Resueltos": 75,
+		"link": 'datosReclamos/septiembre/defensacivil.xls'
+	},
+	{
+		"TipoPuntoEstrategico": "Desarrollo Social",
+		"Pendientes": 0,
+		"Total": 1,
+		"Resueltos": 1,
+		"link": 'datosReclamos/septiembre/desarrollosocial.xls'
+	},
+	{
+		"TipoPuntoEstrategico": "Ente Vial ",
+		"Pendientes": 9,
+		"Total": 276,
+		"Resueltos": 267,
+		"link": 'datosReclamos/septiembre/entevial.xls'
+	},
+	{
+		"TipoPuntoEstrategico": "Guardaparque",
+		"Pendientes": 0,
+		"Total": 12,
+		"Resueltos": 12,
+		"link": 'datosReclamos/septiembre/guardaparque.xls'
+	},
+	{
+		"TipoPuntoEstrategico": "Higiene Urbana",
+		"Pendientes": 48,
+		"Total": 1645,
+		"Resueltos": 1426,
+		"link": 'datosReclamos/septiembre/higieneurbana.xls'
+	},
+	{
+		"TipoPuntoEstrategico": "Infraestructura",
+		"Pendientes": 38,
+		"Total": 38,
+		"Resueltos": 0,
+		"link": 'datosReclamos/septiembre/infraestructura.xls'
+	},
+	{
+		"TipoPuntoEstrategico": "Mascotas",
+		"Pendientes": 19,
+		"Total": 19,
+		"Resueltos": 0,
+		"link": 'datosReclamos/septiembre/mascotas.xls'
+	},
+	{
+		"TipoPuntoEstrategico": "Medio ambiente",
+		"Pendientes": 12,
+		"Total": 12,
+		"Resueltos":0,
+		"link": 'datosReclamos/septiembre/medioambiente.xls'
+	},
+	{
+		"TipoPuntoEstrategico": "Obras Privadas",
+		"Pendientes": 18,
+		"Total": 18,
+		"Resueltos": 0,
+		"link": 'datosReclamos/septiembre/obrasprivadas.xls'
+	},
+	{
+		"TipoPuntoEstrategico": "Obras Sanitarias",
+		"Pendientes": 207,
+		"Total": 405,
+		"Resueltos": 198,
+		"link": 'datosReclamos/septiembre/obrassanitarias.xls'
+	},
+	{
+		"TipoPuntoEstrategico": "Salud",
+		"Pendientes": 9,
+		"Total": 9,
+		"Resueltos": 0,
+		"link": 'datosReclamos/septiembre/salud.xls'
+	},
+	{
+		"TipoPuntoEstrategico": "Señalización",
+		"Pendientes": 9,
+		"Total": 16,
+		"Resueltos": 7,
+		"link": 'datosReclamos/septiembre/señalizacion.xls'
+	},
+	{
+		"TipoPuntoEstrategico": "Servicios Públicos",
+		"Pendientes": 74,
+		"Total": 75,
+		"Resueltos": 1,
+		"link": 'datosReclamos/septiembre/serviciospublicos.xls'
+	},
+	{
+		"TipoPuntoEstrategico": "Tasas Urbanas",
+		"Pendientes": 2,
+		"Total": 2,
+		"Resueltos": 0,
+		"link": 'datosReclamos/septiembre/transito.xls'
+	},
+	{
+		"TipoPuntoEstrategico": "Tránsito",
+		"Pendientes": 33,
+		"Total": 73,
+		"Resueltos": 39,
+		"link": 'datosReclamos/septiembre/transito.xls'
+	},
+	{
+		"TipoPuntoEstrategico": "Transporte",
+		"Pendientes": 1,
+		"Total": 2,
+		"Resueltos": 1,
+		"link": 'datosReclamos/septiembre/transporte.xls'
+	}
+]}
 var agosto = {"mes":[
 	{
 		"TipoPuntoEstrategico": "Bromatologia",
@@ -782,7 +910,7 @@ var Areas = [
 /* Graficos de desempeño anual */
 
   const labels = ['Secretarías:'];
-  const labelsMeses = ['mayo','junio','julio','agosto'];
+  const labelsMeses = ['junio','julio','agosto','septiembre'];
 
 
 
