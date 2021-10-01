@@ -879,7 +879,7 @@ function cargarAlertas(mes){
 
 
 
-const meses = [mayo,junio,julio,agosto];
+const meses = [mayo,junio,julio,agosto,septiembre];
 
 var Areas = [
 	Gobierno = {  
