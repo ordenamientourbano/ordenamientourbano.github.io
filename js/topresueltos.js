@@ -673,7 +673,7 @@ function indicador(e){
 	var resultado = ( Math.pow(((e.Resueltos/e.Total)+0.001) , 1/5))/ (Math.pow(1.005, (e.Pendientes)));
 	if (e.Pendientes<=30 && e.Total<=30 && resultado <= 0.4){
 		resultado = resultado + 0.4
-		resultado = resultado + 0.4 * (Math.pow(3, (e.Pendientes/-80)))
+		resultado = resultado + 0.05 * (Math.pow(3, (e.Pendientes/-80)))
 	}
 	return (resultado*10).toFixed(2);
 }
