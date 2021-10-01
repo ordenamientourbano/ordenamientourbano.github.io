@@ -3,128 +3,149 @@ var septiembre = {"mes":[
 	{
 		"TipoPuntoEstrategico": "Bromatologia",
 		"Pendientes": 0,
-		"Total": 8,
-		"Resueltos": 8,
-		"link": 'datosReclamos/septiembre/bromatologia.xls'
+		"Total": 7,
+		"Resueltos": 7,
+        "link": 'datosReclamos/septiembre/bromatologia.xls'
 	},
 	{
 		"TipoPuntoEstrategico": "Comercio",
-		"Pendientes": 44,
-		"Total": 197,
-		"Resueltos": 153,
-		"link": 'datosReclamos/septiembre/comercio.xls'
+		"Pendientes": 162,
+		"Total": 333,
+		"Resueltos": 171,
+        "link": 'datosReclamos/septiembre/comercio.xls'
 	},
 	{
 		"TipoPuntoEstrategico": "Defensa Civil",
-		"Pendientes": 3,
-		"Total": 78,
-		"Resueltos": 75,
-		"link": 'datosReclamos/septiembre/defensacivil.xls'
+		"Pendientes": 4,
+		"Total": 66,
+		"Resueltos": 62,
+        "link": 'datosReclamos/septiembre/defensacivil.xls'
 	},
 	{
 		"TipoPuntoEstrategico": "Desarrollo Social",
-		"Pendientes": 0,
-		"Total": 1,
-		"Resueltos": 1,
-		"link": 'datosReclamos/septiembre/desarrollosocial.xls'
+		"Pendientes": 3,
+		"Total": 7,
+		"Resueltos": 4,
+        "link": 'datosReclamos/septiembre/desarrollosocial.xls'
 	},
 	{
 		"TipoPuntoEstrategico": "Ente Vial ",
-		"Pendientes": 9,
-		"Total": 276,
-		"Resueltos": 267,
-		"link": 'datosReclamos/septiembre/entevial.xls'
+		"Pendientes": 124,
+		"Total": 749,
+		"Resueltos": 625,
+        "link": 'datosReclamos/septiembre/entevial.xls'
+	},
+	{
+		"TipoPuntoEstrategico": "Espacios Públicos",
+		"Pendientes": 5,
+		"Total": 5,
+		"Resueltos": 0,
+        "link": 'datosReclamos/septiembre/espaciospublicos.xls'
 	},
 	{
 		"TipoPuntoEstrategico": "Guardaparque",
-		"Pendientes": 0,
-		"Total": 12,
+		"Pendientes": 5,
+		"Total": 17,
 		"Resueltos": 12,
-		"link": 'datosReclamos/septiembre/guardaparque.xls'
+        "link": 'datosReclamos/septiembre/guardaparque.xls'
 	},
 	{
 		"TipoPuntoEstrategico": "Higiene Urbana",
-		"Pendientes": 48,
-		"Total": 1645,
-		"Resueltos": 1426,
-		"link": 'datosReclamos/septiembre/higieneurbana.xls'
+		"Pendientes": 285,
+		"Total": 1643,
+		"Resueltos": 1358,
+        "link": 'datosReclamos/septiembre/higieneurbana.xls'
 	},
 	{
 		"TipoPuntoEstrategico": "Infraestructura",
-		"Pendientes": 38,
-		"Total": 38,
+		"Pendientes": 49,
+		"Total": 49,
 		"Resueltos": 0,
-		"link": 'datosReclamos/septiembre/infraestructura.xls'
+        "link": 'datosReclamos/septiembre/infraestructura.xls'
 	},
 	{
 		"TipoPuntoEstrategico": "Mascotas",
-		"Pendientes": 19,
-		"Total": 19,
+		"Pendientes": 17,
+		"Total": 17,
 		"Resueltos": 0,
-		"link": 'datosReclamos/septiembre/mascotas.xls'
+        "link": 'datosReclamos/septiembre/mascota.xls'
 	},
 	{
 		"TipoPuntoEstrategico": "Medio ambiente",
-		"Pendientes": 12,
-		"Total": 12,
-		"Resueltos":0,
-		"link": 'datosReclamos/septiembre/medioambiente.xls'
+		"Pendientes": 7,
+		"Total": 7,
+		"Resueltos": 0,
+        "link": 'datosReclamos/septiembre/medioambiente.xls'
 	},
 	{
 		"TipoPuntoEstrategico": "Obras Privadas",
-		"Pendientes": 18,
-		"Total": 18,
+		"Pendientes": 14,
+		"Total": 14,
 		"Resueltos": 0,
-		"link": 'datosReclamos/septiembre/obrasprivadas.xls'
+        "link": 'datosReclamos/septiembre/obrasprivadas.xls'
 	},
 	{
 		"TipoPuntoEstrategico": "Obras Sanitarias",
-		"Pendientes": 207,
-		"Total": 405,
-		"Resueltos": 198,
-		"link": 'datosReclamos/septiembre/obrassanitarias.xls'
+		"Pendientes": 248,
+		"Total": 383,
+		"Resueltos": 135,
+        "link": 'datosReclamos/septiembre/obrassanitarias.xls'
+	},
+	{
+		"TipoPuntoEstrategico": "Otros",
+		"Pendientes": 14,
+		"Total": 14,
+		"Resueltos": 0,
+        "link": 'datosReclamos/septiembre/otros.xls'
 	},
 	{
 		"TipoPuntoEstrategico": "Salud",
-		"Pendientes": 9,
-		"Total": 9,
+		"Pendientes": 10,
+		"Total": 10,
 		"Resueltos": 0,
-		"link": 'datosReclamos/septiembre/salud.xls'
+        "link": 'datosReclamos/septiembre/salud.xls'
+	},
+	{
+		"TipoPuntoEstrategico": "SEM",
+		"Pendientes": 4,
+		"Total": 4,
+		"Resueltos": 0,
+        "link": 'datosReclamos/septiembre/sem.xls'
 	},
 	{
 		"TipoPuntoEstrategico": "Señalización",
-		"Pendientes": 9,
-		"Total": 16,
-		"Resueltos": 7,
-		"link": 'datosReclamos/septiembre/señalizacion.xls'
+		"Pendientes": 5,
+		"Total": 6,
+		"Resueltos": 1,
+        "link": 'datosReclamos/septiembre/señalizacion.xls'
 	},
 	{
 		"TipoPuntoEstrategico": "Servicios Públicos",
-		"Pendientes": 74,
-		"Total": 75,
-		"Resueltos": 1,
-		"link": 'datosReclamos/septiembre/serviciospublicos.xls'
+		"Pendientes": 51,
+		"Total": 66,
+		"Resueltos": 15,
+        "link": 'datosReclamos/septiembre/serviciospublicos.xls'
 	},
 	{
-		"TipoPuntoEstrategico": "Tasas Urbanas",
-		"Pendientes": 2,
-		"Total": 2,
+		"TipoPuntoEstrategico": "Tasa Municipal",
+		"Pendientes": 10,
+		"Total": 10,
 		"Resueltos": 0,
-		"link": 'datosReclamos/septiembre/transito.xls'
+        "link": 'datosReclamos/septiembre/tasamunicipal.xls'
 	},
 	{
 		"TipoPuntoEstrategico": "Tránsito",
-		"Pendientes": 33,
-		"Total": 73,
-		"Resueltos": 39,
-		"link": 'datosReclamos/septiembre/transito.xls'
+		"Pendientes": 56,
+		"Total": 97,
+		"Resueltos": 41,
+        "link": 'datosReclamos/septiembre/transito.xls'
 	},
 	{
 		"TipoPuntoEstrategico": "Transporte",
-		"Pendientes": 1,
-		"Total": 2,
-		"Resueltos": 1,
-		"link": 'datosReclamos/septiembre/transporte.xls'
+		"Pendientes": 0,
+		"Total": 3,
+		"Resueltos": 3,
+        	"link": 'datosReclamos/septiembre/transporte.xls'
 	}
 ]}
 var agosto = {"mes":[
