@@ -1,4 +1,139 @@
 
+var octubre = {"mes":[
+	{
+		"TipoPuntoEstrategico": "Bromatologia",
+		"Pendientes": 0,
+		"Total": 1,
+		"Resueltos": 1,
+        "link": 'datosReclamos/octubre/bromatologia.xls'
+	},
+	{
+		"TipoPuntoEstrategico": "Comercio",
+		"Pendientes": 39,
+		"Total": 39,
+		"Resueltos": 0,
+        "link": 'datosReclamos/octubre/comercio.xls'
+	},
+	{
+		"TipoPuntoEstrategico": "Defensa Civil",
+		"Pendientes": 10,
+		"Total": 27,
+		"Resueltos": 17,
+        "link": 'datosReclamos/octubre/defensacivil.xls'
+	},
+	{
+		"TipoPuntoEstrategico": "Desarrollo Social",
+		"Pendientes": 2,
+		"Total": 2,
+		"Resueltos": 0,
+        "link": 'datosReclamos/octubre/desarrollosocial.xls'
+	},
+	{
+		"TipoPuntoEstrategico": "Ente Vial ",
+		"Pendientes": 55,
+		"Total": 55,
+		"Resueltos": 0,
+        "link": 'datosReclamos/octubre/entevial.xls'
+	},
+	{
+		"TipoPuntoEstrategico": "Espacios Públicos",
+		"Pendientes": 1,
+		"Total": 1,
+		"Resueltos": 0,
+        "link": 'datosReclamos/octubre/espaciospublicos.xls'
+	},
+	{
+		"TipoPuntoEstrategico": "Guardaparque",
+		"Pendientes": 2,
+		"Total": 2,
+		"Resueltos": 0,
+        "link": 'datosReclamos/octubre/guardaparque.xls'
+	},
+	{
+		"TipoPuntoEstrategico": "Higiene Urbana",
+		"Pendientes": 322,
+		"Total": 620,
+		"Resueltos": 298,
+        "link": 'datosReclamos/octubre/higieneurbana.xls'
+	},
+	{
+		"TipoPuntoEstrategico": "Infraestructura",
+		"Pendientes": 9,
+		"Total": 9,
+		"Resueltos": 0,
+        "link": 'datosReclamos/octubre/infraestructura.xls'
+	},
+	{
+		"TipoPuntoEstrategico": "Mascotas",
+		"Pendientes": 2,
+		"Total": 2,
+		"Resueltos": 0,
+        "link": 'datosReclamos/octubre/mascotas.xls'
+	},
+	{
+		"TipoPuntoEstrategico": "Obras Sanitarias",
+		"Pendientes": 54,
+		"Total": 124,
+		"Resueltos": 70,
+        "link": 'datosReclamos/octubre/obrassanitarias.xls'
+	},
+	{
+		"TipoPuntoEstrategico": "Otros",
+		"Pendientes": 6,
+		"Total": 6,
+		"Resueltos": 0,
+        "link": 'datosReclamos/octubre/otros.xls'
+	},
+	{
+		"TipoPuntoEstrategico": "Policia",
+		"Pendientes": 7,
+		"Total": 7,
+		"Resueltos": 0,
+        "link": 'datosReclamos/octubre/policia.xls'
+	},
+	{
+		"TipoPuntoEstrategico": "Salud",
+		"Pendientes": 1,
+		"Total": 1,
+		"Resueltos": 0,
+        "link": 'datosReclamos/octubre/salud.xls'
+	},
+	{
+		"TipoPuntoEstrategico": "Señalización",
+		"Pendientes": 2,
+		"Total": 2,
+		"Resueltos": 0,
+        "link": 'datosReclamos/octubre/señalizacion.xls'
+	},
+	{
+		"TipoPuntoEstrategico": "Servicios Públicos",
+		"Pendientes": 11,
+		"Total": 64,
+		"Resueltos": 53,
+        "link": 'datosReclamos/octubre/serviciospublicos.xls'
+	},
+	{
+		"TipoPuntoEstrategico": "Tránsito",
+		"Pendientes": 13,
+		"Total": 16,
+		"Resueltos": 3,
+        "link": 'datosReclamos/octubre/transito.xls'
+	},
+	{
+		"TipoPuntoEstrategico": "Transporte",
+		"Pendientes": 2,
+		"Total": 2,
+		"Resueltos": 0,
+        "link": 'datosReclamos/octubre/transporte.xls'
+	},
+	{
+		"TipoPuntoEstrategico": "Usina",
+		"Pendientes": 22,
+		"Total": 22,
+		"Resueltos": 0,
+        "link": 'datosReclamos/octubre/usina.xls'
+	}
+]}
 var septiembre = {"mes":[
 	{
 		"TipoPuntoEstrategico": "Bromatologia",
@@ -819,7 +954,9 @@ var abril = {"mes":[
 
 
 function indicador(e){
-	var resultado = ( Math.pow(((e.Resueltos/e.Total)+0.001) , 1/5))/ (Math.pow(1.005, (e.Pendientes)));
+	var porcentResueltos = e.Resueltos/e.Total;
+	var porcentNoResueltos = 1 - porcentResueltos;
+	var resultado = ( Math.pow(((porcentResueltos)+0.001) , 1/5))/ (Math.pow(1.005, (e.Pendientes* porcentNoResueltos)));
 	if (e.Pendientes<=30 && e.Total<=30 && resultado <= 0.4){
 		resultado = resultado + 0.4
 		resultado = resultado + 0.05 * (Math.pow(3, (e.Pendientes/-80)))
@@ -900,7 +1037,7 @@ function cargarAlertas(mes){
 
 
 
-const meses = [mayo,junio,julio,agosto,septiembre];
+const meses = [abril,mayo,junio,julio,agosto,septiembre];
 
 var Areas = [
 	Gobierno = {  
@@ -931,7 +1068,7 @@ var Areas = [
 /* Graficos de desempeño anual */
 
   const labels = ['Secretarías:'];
-  const labelsMeses = ['junio','julio','agosto','septiembre'];
+  const labelsMeses = ['abril','mayo','junio','julio','agosto','septiembre'];
 
 
 
@@ -940,7 +1077,7 @@ var Areas = [
   const data = {
 	labels: labels,
 	datasets: [{
-	  label: 'Desempeño últimos 4 meses por Secretaria',
+	  label: 'Desempeño desde abril hasta hoy',
 	  backgroundColor: '#670066',
 	  borderColor: 'black',
 	  data: numeros,
