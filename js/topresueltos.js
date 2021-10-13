@@ -1101,9 +1101,9 @@ function mensual(secretaria,month){
 }
 
 function barrasSecretaria(sec){
-	totales = [0,0,0,0];
-	resueltos = [0,0,0,0];
-	pendientes = [0,0,0,0];
+	totales = [0,0,0,0,0,0];
+	resueltos = [0,0,0,0,0,0];
+	pendientes = [0,0,0,0,0,0];
   console.log(sec)
   sec.secretarias.forEach(function(secretaria){
 	  k = 0;
